@@ -1,0 +1,24 @@
+{
+  "name": "project-guidelines",
+  "homepage": "https://github.com/aaronbates/project-guidelines",
+  "description": "Approach, guidance and rules for my personal projects",
+  "keywords": [
+    "css",
+    "html",
+    "javascript",
+    "react",
+    "sass",
+    "webpack"
+  ],
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": "false",
+  "author": "Aaron Bates <aaron@aaronbates.me> (http://aaronbates.me)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaronbates/project-guidelines.git"
+  },
+  "main": "README.md",
+  "dependencies": {},
+  "devDependencies": {}
+}
