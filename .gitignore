@@ -1,0 +1,54 @@
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*.zip
+*~
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# OS or Editor folders
+._*
+.cache
+.DS_Store
+.idea
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
+Thumbs.db
+
+# SCSS-Lint
+scss-lint-report.xml
+
+# grunt-contrib-sass cache
+.sass-cache
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Folders to ignore
+node_modules
+
+# Project specific:
