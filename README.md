@@ -49,11 +49,11 @@ _Note: Guidelines will link to any personal or third-party boilerplate repos for
 4. [JavaScript](javascript/javascript-guidelines.md)
 5. [React](react/react-guidelines.md)
 6. [Git](git/git-guidelines.md)
-7. [Markdown](markdown/markdown-guidleines.md)
+7. [Markdown](markdown/markdown-guidelines.md)
 
 Secondary guidelines:
 
-1. Webpack
+1. [Webpack](webpack/webpack-guidelines.md)
 
 ...TBD.
 
