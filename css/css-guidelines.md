@@ -208,7 +208,7 @@ CSS variable [support is improving](https://caniuse.com/css-variables) — most 
 }
 ```
 
-However, it's important to remember they differ from SASS variables in that they are **dynamically scoped** and thus are subject to inheritance and cascade.
+However, it's important to remember they differ from Sass variables in that they are **dynamically scoped** and thus are subject to inheritance and cascade.
 
 Notes and best practice:
 
@@ -285,7 +285,7 @@ Print styles should be included along with other stylesheets and an additional H
 
 If working on anything other than a small project, it's a good idea to split code across multiple files — each file having its own scope or meaning.
 
-Even if not using a preprocessor (e.g. [SASS](../sass/sass-guidelines.md)), these files can be merged during a build step using a tool such as [Gulp](../gulp/gulp-guidelines.md) or [Webpack](../webpack/webpack-guidelines.md).
+Even if not using a preprocessor (e.g. [Sass](../sass/sass-guidelines.md)), these files can be merged during a build step using a tool such as [Gulp](../gulp/gulp-guidelines.md) or [Webpack](../webpack/webpack-guidelines.md).
 
 ### Table of contents
 
@@ -323,7 +323,7 @@ Leave 1 empty line after each title and 2 lines between each section for easier 
 
 The [Inverted Triangle (ITCSS)](http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528) method is one recommended method to organise project files.
 
-*Note: ITCSS more specifically relates to CSS using preprocessers such as SASS, but can be applied to pure CSS projects too, especially when using a build tool such as [webpack](https://webpack.js.org) or Gulp (see [webpack guidelines](../webpack/webpack-guidelines.md)).*
+*Note: ITCSS more specifically relates to CSS using preprocessers such as Sass, but can be applied to pure CSS projects too, especially when using a build tool such as [webpack](https://webpack.js.org) or Gulp (see [webpack guidelines](../webpack/webpack-guidelines.md)).*
 
 Split the codebase into the following layers:
 
@@ -380,10 +380,11 @@ The concept is that as we move "down" the inverted triangle, we move from:
 
 @import 'utils/utils.css';
 ```
+*Note: it goes without saying that you should not use native CSS imports in production code and only use them with build tools that produce a single minified file.*
 
 It is advised that generic animations are defined as objects in an `animations` file, while more specific animations are defined in their parent component file.
 
-CSS project structure is explored in more depth in my [SASS guidelines](../sass/sass-guidelines.md).
+CSS project structure is explored in more depth in my [Sass guidelines](../sass/sass-guidelines.md).
 
 ## Naming conventions
 
@@ -767,11 +768,11 @@ Normalize.css is a modern, HTML5-ready alternative to overly opinionated CSS res
 
 Beyond this, other useful defaults, common helpers, media queries and print styles are used from the [HTML5 Boilerplate](../html/html-guidelines.md#boilerplates)
 
-_Note: for larger projects a customer boilerplate should be considered that builds on a framework and uses a pre-processor such as [SASS](../sass/sass-guidelines.md) and considers other awesome tools such as PostCSS._
+_Note: for larger projects a customer boilerplate should be considered that builds on a framework and uses a pre-processor such as [Sass](../sass/sass-guidelines.md) and considers other awesome tools such as PostCSS._
 
 ## Choosing the right tools
 
-> **"So, should I use SASS, PostCSS or CSS-in-JS?"**
+> **"So, should I use Sass, PostCSS or CSS-in-JS?"**
 
 There's no right answer.
 
@@ -779,8 +780,8 @@ They all have their benefits, pros and cons. It's about using the right tool for
 
 - If it doesn't need to be done at run-time, don't do it at run-time — offload it to a build tool and reduce the weight on the server and/or client. Remember that more than 50% of web traffic happens on mobile devices.
 - Built-time pre-processing should probably always take precedence... **unless run-time is neccesary** for something like client inout or external data sources.
-- Use SASS / pre-processing for anything that's algebra heavy — think radians, Bézier curves or other fear-inducing work. `libSASS` can get the job done here better than JS (most likely).
-- As things change in the future then PostCSS will be more relevant. SASS will need to fill less of the functions it has traditionally as browsers catch up.
+- Use pre-processing (Sass/LESS) for anything that's algebra heavy — think radians, Bézier curves or other fear-inducing work. `libSass` can get the job done here better than JS (most likely).
+- As things change in the future then PostCSS will be more relevant. Sass will need to fill less of the functions it has traditionally as browsers catch up.
 - If you're looking for complete *Separation-of-Concerns* on an component level (welcome to the future) thes CSS-in-JS makes total sense...
 
 ### CSS-in-JS

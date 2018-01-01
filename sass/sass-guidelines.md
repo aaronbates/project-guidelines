@@ -1,4 +1,4 @@
-# SASS guidelines
+# Sass guidelines
 
 :construction: work in-progress :construction:
 

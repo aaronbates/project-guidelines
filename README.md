@@ -45,7 +45,7 @@ _Note: Guidelines will link to any personal or third-party boilerplate repos for
 
 1. [HTML](html/html-guidelines.md)
 2. [CSS](css/css-guidelines.md)
-3. [SASS](sass/sass-guidelines.md)
+3. [Sass](sass/sass-guidelines.md)
 4. [JavaScript](javascript/javascript-guidelines.md)
 5. [React](react/react-guidelines.md)
 6. [Git](git/git-guidelines.md)
@@ -64,6 +64,6 @@ Secondary guidelines:
 ## TODO
 
 - [ ] JavaScript guidelines
-- [ ] SASS guidelines
+- [ ] Sass guidelines
 - [ ] Secondary guidelines
 - [ ] Additional guidelines? Rails? Python?
