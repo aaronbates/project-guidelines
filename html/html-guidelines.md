@@ -32,7 +32,7 @@ Semantic markup language for structuring content.
 Structure (markup), presentation (styling: [CSS](../css/css-guidelines.md), [SASS](../sass/sass-guidelines.md)) and behaviour (scripting: [JavaScript](../js/js-guidelines.md)) should be kept strictly separate — unless a technology such as [React](../react/react-guidelines.md) is in use.
 
 - Valid HTML5 must be used for all documents
-- Design with progressive enhancement in mind
+- Design with graceful degradation (and progressive enhancement) in mind
 - Use tags according to their semantic purpose
 - Use headings to properly structure content
 - Omit type attributes from stylesheet and scripts tags
@@ -47,7 +47,7 @@ Structure (markup), presentation (styling: [CSS](../css/css-guidelines.md), [SAS
 - Provide alternative content for media tags
 - Design with accessibility in mind
 - Use progressive enhancement
-- Follow [ARIA](#aria) guidelines
+- Follow [ARIA](#accessibility-and-aria) guidelines
 
 ### Colour
 
