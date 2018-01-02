@@ -188,7 +188,7 @@ There is one exception to the rule of writing CSS across new lines: when related
 
 ## Media queries
 
-?How are we approaching this?
+:construction: How are we approaching this? :construction:
 
 - Avoid device-based media query names such as `phone` or `desktop`, these have limited longevity?
 - Prefer viewport releated naming such as `xs`, `small`?
@@ -255,7 +255,7 @@ aside {
 }
 
 /**
- * this produce different results despite using the same variables 
+ * this produces different results despite using the same variables 
  */
 main,
 aside {
@@ -388,11 +388,11 @@ CSS project structure is explored in more depth in my [Sass guidelines](../sass/
 
 ## Naming conventions
 
-> "There are only two hard problems in Computer Science: cache invalidation and naming things" — Phil Karlton
+> "There are only two hard problems in Computer Science: cache invalidation and naming things"
 
-Naming things is hard. It's the the biggest source of pain, complexity and struggle when maintaining large CSS based projects.
+— Phil Karlton
 
-As such, it's critical to use a consistent, organised and sane methodology to increase development speed, improve debugging and build a maintainable code base.
+Naming things is hard. It's the the biggest source of pain, complexity and struggle when maintaining large CSS based projects. As such, it's critical to use a consistent, organised and sane methodology to increase development speed, improve debugging and build a maintainable code base.
 
 The goal here is a code base which is both **transparent** and **self-documenting**.
 
@@ -702,7 +702,7 @@ Changing root classes, objects and components could have a huge knock-on effect 
 
 In CSS terms, this means composing UI items of smaller classes that focus on specific, limited functionality.
 
-If you find yourself writing lots of properties into a rule, you should probably abstract it and create classes to seperate:
+If you find yourself writing lots of properties in a rule, you should probably abstract it and create classes to seperate:
 
 - Layout
 - Structure
@@ -779,20 +779,22 @@ There's no right answer.
 They all have their benefits, pros and cons. It's about using the right tool for the job — so, how do you go about choosing the right tool for the job? Some considerations:
 
 - If it doesn't need to be done at run-time, don't do it at run-time — offload it to a build tool and reduce the weight on the server and/or client. Remember that more than 50% of web traffic happens on mobile devices.
-- Built-time pre-processing should probably always take precedence... **unless run-time is neccesary** for something like client inout or external data sources.
+- Build-time pre-processing should probably always take precedence... **unless run-time is neccesary** for something like client in-out or external data sources.
 - Use pre-processing (Sass/LESS) for anything that's algebra heavy — think radians, Bézier curves or other fear-inducing work. `libSass` can get the job done here better than JS (most likely).
 - As things change in the future then PostCSS will be more relevant. Sass will need to fill less of the functions it has traditionally as browsers catch up.
-- If you're looking for complete *Separation-of-Concerns* on an component level (welcome to the future) thes CSS-in-JS makes total sense...
+- If you're looking for complete *Separation-of-Concerns* on an component level (welcome to the future) then CSS-in-JS makes total sense...
 
 ### CSS-in-JS
 
-> Most of all, I’m excited about the potential of components written in a single language to form the basis of a new, unified styling language—one that unites the front-end community in ways we’ve never seen before.
+> Most of all, I’m excited about the potential of components written in a single language to form the basis of a new, unified styling language — one that unites the front-end community in ways we’ve never seen before.
 
 — Mark Dalgleish
 
 For a complete overview of the topic I emplore you to take the time to read Mark's brilliant and seminal deep-dive  **["A Unified Styling Language"](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)**.
 
 It's also worth reading his 2015 piece ["Block, Element, Modifying Your JavaScript Components"](https://medium.com/seek-blog/block-element-modifying-your-javascript-components-d7f99fcab52b) as a primer.
+
+*As a counter-point, it's very much worth reading Gajus Kuizinas' piece [Stop using CSS in JavaScript for web development](https://medium.com/@gajus/stop-using-css-in-javascript-for-web-development-fa32fb873dcc) — it raises a lot of interesting points, and as the author of `react-css-modules` and `babel-plugin-react-css-modules` his opinion is worth considering.*
 
 ## Acknowledgements
 
