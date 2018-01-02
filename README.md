@@ -2,7 +2,9 @@
 
 These guidelines are both convention based _and_ opinionated. They are designed for use in my personal projects and represent a combination of industry best-practice and my own preferences.
 
-> "Every line of code should appear to be written by a single person, no matter the number of contributors." — The Golden Rule
+> "Every line of code should appear to be written by a single person, no matter the number of contributors."
+
+— The Golden Rule
 
 ## Why have guidelines?
 
